@@ -1,0 +1,29 @@
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.center-button {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    color: white;
+    /* transition-property: background-color, border-radius, box-shadow, color;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.49,.88,1,.01);
+    transition-delay: 3s; */
+    transition: background-color 1s cubic-bezier(.49,.88,1,.01) 3s, border-radius 0.5s cubic-bezier(.5,.97,.45,.03) 1s, box-shadow 2.5s cubic-bezier(0,-0.01,1,.29) 0s, color 1s cubic-bezier(.43,.09,.43,.02) 1s;
+}
+
+.center-button:hover {
+    border-radius: 50%;
+    box-shadow: 2px 3px 4px 3px blue;
+    background-color: yellow;
+    color: blue;
+    transition-delay: 0s;
+    
+}
